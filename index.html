@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellen Yao</title>
+    <!-- password -->
+    <script>
+        $(function(){
+            pwd();
+            function pwd(){
+                var password = prompt("Password Please");
+                //Change to your own password
+                if(password != '0000'){
+                    document.body.innerHTML = 'index.html';
+                    document.body.innerHTML = '密碼錯誤';
+                }else{
+                    // alert('Success');
+                    // $('.mask').remove();
+                    $('body').removeClass('mask');
+                }
+            }
+        })
+    </script>
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Bootstrap -->
