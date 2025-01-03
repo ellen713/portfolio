@@ -118,7 +118,7 @@ body .my-container .works .col-sm-12 .thumbnail:hover .Img img {
 body .my-container .works .col-sm-12 .thumbnail:hover .Img::before {
   opacity: 0.8;
 }
-body .my-container .works .col-sm-12 .thumbnail:hover .Txt {
+body .my-container .works .col-sm-12 .thumbnail:hover .Img .Txt {
   transform: translate(-50%, 0);
 }
 body .my-container .works .col-sm-12 .thumbnail .Img {
@@ -143,7 +143,7 @@ body .my-container .works .col-sm-12 .thumbnail .Img::before {
   opacity: 0;
   z-index: 2;
 }
-body .my-container .works .col-sm-12 .thumbnail .Txt {
+body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   position: absolute;
   bottom: 0%;
   left: 50%;
