@@ -156,6 +156,47 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   transition: all 0.5s linear;
 }
 
+.morepic {
+  text-align: center;
+}
+.morepic p {
+  word-wrap: break-word;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333333;
+}
+.morepic .imgbox {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+@media (max-width: 768px) {
+  .morepic .imgbox {
+    padding-bottom: 70%;
+  }
+}
+.morepic .imgbox:hover img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.morepic .imgbox img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
 .mask {
   position: relative;
 }
