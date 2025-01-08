@@ -172,11 +172,11 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   overflow: hidden;
   height: 0;
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 40%;
 }
 @media (max-width: 768px) {
   .morepic .imgbox {
-    padding-bottom: 70%;
+    padding-bottom: 30%;
   }
 }
 .morepic .imgbox:hover img {
