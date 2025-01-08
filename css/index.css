@@ -166,7 +166,7 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   overflow: hidden;
   height: 0;
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 100%;
 }
 @media (max-width: 768px) {
   .morepic .imgbox {
@@ -174,7 +174,7 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   }
 }
 .morepic .imgbox:hover img {
-  transform: translateX(-50%) scale(1.1);
+  transform: translate(-50%, -50%);
   opacity: 0.5;
 }
 .morepic .imgbox img {
@@ -187,8 +187,8 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   position: absolute;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
 }
 
 .mask {
