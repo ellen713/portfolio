@@ -156,39 +156,39 @@ body
                             background-color: $color-dark
                             display: inline-block
                             transition: all .5s linear
-.morepic
-    text-align: center
-    p
-        word-wrap: break-word
-        font-weight: 600
-        margin-top: 10px
-        color: #333333
-    .imgbox
-        cursor: pointer
-        position: relative
-        display: block
-        overflow: hidden
-        height: 0
-        width: 100%
-        padding-bottom: 40%
-        @include pad
-            padding-bottom: 30%
-        &:hover
-            img
-                transform: translate(-50%, -50%) scale(1.1)
-        img
-            width: 100%
+    .morepic
+        text-align: center
+        p
+            word-wrap: break-word
+            font-weight: 600
+            margin-top: 10px
+            color: #333333
+        .imgbox
+            cursor: pointer
+            position: relative
             display: block
-            -o-object-fit: cover
-            object-fit: cover
-            top: 50%
-            left: 50%
-            position: absolute
-            -webkit-transform: translate(-50%, -50%)
-            transform: translate(-50%, -50%)
-            -webkit-transition: all 0.30s ease-in-out
-            height: 100%
-            -webkit-transition: all 0.30s ease-in-out
+            overflow: hidden
+            height: 0
+            width: 100%
+            padding-bottom: 40%
+            @include pad
+                padding-bottom: 30%
+            &:hover
+                img
+                    transform: translate(-50%, -50%) scale(1.1)
+            img
+                width: 100%
+                display: block
+                -o-object-fit: cover
+                object-fit: cover
+                top: 50%
+                left: 50%
+                position: absolute
+                -webkit-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+                -webkit-transition: all 0.30s ease-in-out
+                height: 100%
+                -webkit-transition: all 0.30s ease-in-out
 .mask
     position: relative
     &::after
