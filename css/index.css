@@ -155,16 +155,11 @@ body .my-container .works .col-sm-12 .thumbnail .Img .Txt {
   display: inline-block;
   transition: all 0.5s linear;
 }
-body .morepic {
+
+.morepic {
   text-align: center;
 }
-body .morepic p {
-  word-wrap: break-word;
-  font-weight: 600;
-  margin-top: 10px;
-  color: #333333;
-}
-body .morepic .imgbox {
+.morepic .imgbox {
   cursor: pointer;
   position: relative;
   display: block;
@@ -174,14 +169,15 @@ body .morepic .imgbox {
   padding-bottom: 40%;
 }
 @media (max-width: 768px) {
-  body .morepic .imgbox {
+  .morepic .imgbox {
     padding-bottom: 30%;
   }
 }
-body .morepic .imgbox:hover img {
+.morepic .imgbox:hover img {
   transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0.9;
 }
-body .morepic .imgbox img {
+.morepic .imgbox img {
   width: 100%;
   display: block;
   -o-object-fit: cover;
