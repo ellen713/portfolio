@@ -1,234 +1,369 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ellen Yao</title>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!-- password -->
-    <!-- <script>
-        $(function(){
-            pwd();
-            function pwd(){
-                var password = prompt("Password Please");
-                //Change to your own password
-                if(password != '0000'){
-                    document.body.innerHTML = 'http://ellenyao.work';
-                    document.body.innerHTML = '密碼錯誤';
-                }else{
-                    // alert('Success');
-                    // $('.mask').remove();
-                $('body').removeClass('mask');
-                }
-            }
-        })
-    </script> -->
-    
+    <script>
+      $(function () {
+        pwd();
+        function pwd() {
+          var password = prompt("Password Please");
+          //Change to your own password
+          if (password != "0000") {
+            document.body.innerHTML = "http://ellenyao.work";
+            document.body.innerHTML = "密碼錯誤";
+          } else {
+            // alert('Success');
+            // $('.mask').remove();
+            $("body").removeClass("mask");
+          }
+        }
+      });
+    </script>
+
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./js/plugins/bootstrap/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/plugins/bootstrap/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <!-- line FB  -->
-	<meta property="og:title" content="Ellen Yao Portfolio" />
-	<meta property="og:description" content="Hi, I'm a web designer and here is my works, if you like it, please contact me! :D" />
-	<meta property="og:image" content="./img/linkicon.jpg" />
-	<meta property="og:url" content="https://ellenyao.work/"/>
+    <meta property="og:title" content="Ellen Yao Portfolio" />
+    <meta
+      property="og:description"
+      content="Hi, I'm a web designer and here is my works, if you like it, please contact me! :D"
+    />
+    <meta property="og:image" content="./img/linkicon.jpg" />
+    <meta property="og:url" content="https://ellenyao.work/" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="200" />
-    <meta name="twitter:title" content="Ellen Yao Portfolio">
-    <link rel="shortcut icon" href="./img/shortcut.png" sizes="32x32">
-    <meta name="description" content="Ellen Yao Portfolio">
-    <link rel="preconnect" href="https://ellenyao.work/">
+    <meta name="twitter:title" content="Ellen Yao Portfolio" />
+    <link rel="shortcut icon" href="./img/shortcut.png" sizes="32x32" />
+    <meta name="description" content="Ellen Yao Portfolio" />
+    <link rel="preconnect" href="https://ellenyao.work/" />
     <!-- style css -->
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="100">
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Ellen Yao</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Works</a>
-                    <a class="nav-link" href="./layout.html">Layout</a>
-                    <a class="nav-link" href="./resume.html">Resume</a>
-                    <a class="nav-link" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-contact">Contact</a>
-                    <!-- <a class="nav-link disabled">Codepen</a> -->
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Ellen Yao</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Works</a
+            >
+            <a class="nav-link" href="./layout.html">Layout</a>
+            <a class="nav-link" href="./resume.html">Resume</a>
+            <a
+              class="nav-link"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal-contact"
+              >Contact</a
+            >
+            <!-- <a class="nav-link disabled">Codepen</a> -->
+          </div>
         </div>
+      </div>
     </nav>
     <div class="my-container container text-center">
-        <div class="works row align-items-center">
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/ama/ -->
-                <a class="thumbnail" type="button" href="https://www.amasafe.com.tw/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-ama.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">雅瑪保險櫃</p></div>
-                    </div>
-                </a>
+      <div class="works row align-items-center">
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/ama/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://www.amasafe.com.tw/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-ama.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">雅瑪保險櫃</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/happymarian/ -->
-                <a class="thumbnail" type="button" href="http://tw.happymarian.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-happymarian.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">快樂瑪麗安 全美語補習班</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/happymarian/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="http://tw.happymarian.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-happymarian.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">快樂瑪麗安 全美語補習班</p>
+              </div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/pgst/ -->
-                <a class="thumbnail" type="button" href="https://www.pgst.org.tw/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-pgst.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">台灣藥物基因體學會</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/pgst/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://www.pgst.org.tw/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-pgst.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">台灣藥物基因體學會</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/goodwall/ -->
-                <a class="thumbnail" type="button" href="https://www.gwv.com.tw/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-goodwall.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">長城好牆防水工程</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/goodwall/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://www.gwv.com.tw/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-goodwall.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">長城好牆防水工程</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/hongyi/ -->
-                <a class="thumbnail" type="button" href="https://building.datavan.com.tw/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-hongyi.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">鴻翊國際</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/hongyi/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://building.datavan.com.tw/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-hongyi.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">鴻翊國際</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/futurebeauty/ -->
-                <a class="thumbnail" type="button" href="https://tinypawsco-shoping.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-futurebeauty.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">FutureBeauty購物網站</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/futurebeauty/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://tinypawsco-shoping.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-futurebeauty.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">FutureBeauty購物網站</p>
+              </div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/globaliso/ -->
-                <a class="thumbnail" type="button" href="https://globaliso.good8d.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-globaliso.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">寰宇企業(一頁式形象)</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/globaliso/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://globaliso.good8d.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-globaliso.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">寰宇企業(一頁式形象)</p>
+              </div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/wisdomc/ -->
-                <a class="thumbnail" type="button" href="https://www.wisdomcapitalglobal.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-wisdomc.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">叡誠環球資產管理</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/wisdomc/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://www.wisdomcapitalglobal.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-wisdomc.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">叡誠環球資產管理</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/easygo/ -->
-                <a class="thumbnail" type="button" href="https://easygo-trip.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-easygo.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">逸行旅行社</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/easygo/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://easygo-trip.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-easygo.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">逸行旅行社</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/hopa/ -->
-                <a class="thumbnail" type="button" href="https://twhopa.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-hopa.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">臺灣血液腫瘤藥學會</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/hopa/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://twhopa.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-hopa.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">臺灣血液腫瘤藥學會</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/metalys/ -->
-                <a class="thumbnail" type="button" href="https://metal-ys.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-metalys.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">允祥彈簧工業</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/metalys/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://metal-ys.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-metalys.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">允祥彈簧工業</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/yongbao/ -->
-                <a class="thumbnail" type="button" href="https://www.yongbao.com.tw/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-yongbao.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">永寶保險櫃</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/yongbao/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://www.yongbao.com.tw/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-yongbao.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">永寶保險櫃</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/pacific/ -->
-                <a class="thumbnail" type="button" href="https://pacific.good8d.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-pacific.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">太平洋集團</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/pacific/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://pacific.good8d.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-pacific.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">太平洋集團</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://new.web-maker.com.tw/headachefree/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-headachefree.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">台灣頭痛學會活動網頁</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://new.web-maker.com.tw/headachefree/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-headachefree.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">台灣頭痛學會活動網頁</p>
+              </div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/yunhua/ -->
-                <a class="thumbnail" type="button" href="https://yunhuasg.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-yunhua.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">雲華新加坡有限公司</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/yunhua/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://yunhuasg.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-yunhua.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">雲華新加坡有限公司</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- https://new.web-maker.com.tw/microcurer/ -->
-                <a class="thumbnail" type="button" href="https://microcurer.good8d.com/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-microcurer.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">微智生醫(一頁式形象)</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- https://new.web-maker.com.tw/microcurer/ -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://microcurer.good8d.com/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-microcurer.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">微智生醫(一頁式形象)</p>
+              </div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://new.web-maker.com.tw/fuji1212/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-fuji.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">富士大飯店(提案)</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://new.web-maker.com.tw/fuji1212/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-fuji.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">富士大飯店(提案)</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://new.web-maker.com.tw/happymarian1/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-happymarian1.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">快樂瑪麗安(提案)</p></div>
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://new.web-maker.com.tw/happymarian1/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-happymarian1.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">快樂瑪麗安(提案)</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <!-- 需要彈跳視窗時再解開 -->
-                <!--   
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <!-- 需要彈跳視窗時再解開 -->
+          <!--   
                     <a class="thumbnail" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-01">
                         <div class="Img">
                                 <img src="./img/thumbnail-01.jpg" alt="">
@@ -236,127 +371,200 @@
                             </div>
                     </a> 
                 -->
-                <!-- 需要彈跳視窗時再解開END -->
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/omamarketing/" target="_blank">
-                   <div class="Img">
-                        <img src="./img/thumbnail-oma.jpg" alt="">
-                        <div class="Txt"><p class="text-2xl">奧瑪數位行銷</p></div>
-                    </div>
-                </a>
+          <!-- 需要彈跳視窗時再解開END -->
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/omamarketing/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-oma.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">奧瑪數位行銷</p></div>
             </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/tameswatch/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-tames.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">TAMES WATCH</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/innovation/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-innovation.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">新創科技</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/jinmingclinic/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-jinming.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">晶明眼科</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/jenclinic/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-jenclinic.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">珍妍時尚美學診所</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/hellohibar/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-hibar.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">洗髮產品Hibar活動頁</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/refreshtaiwanlottery/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-refresh.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">Refresh Taiwan活動遊戲頁</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/egainanimation/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-egain.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">一見古美術情境式網站</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/situation3.0/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-olily3.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">歐立利情境式網頁</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/situation2.0/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-olily2.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">歐立利情境式網頁</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="https://ellen713.github.io/yeh/" target="_blank">
-                    <div class="Img">
-                            <img src="./img/thumbnail-yeh.jpg" alt="">
-                            <div class="Txt"><p class="text-2xl">個人其他作品</p></div>
-                        </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <a class="thumbnail" type="button" href="" target="_blank">
-                    
-                </a>
-            </div>
+          </a>
         </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/tameswatch/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-tames.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">TAMES WATCH</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/innovation/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-innovation.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">新創科技</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/jinmingclinic/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-jinming.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">晶明眼科</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/jenclinic/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-jenclinic.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">珍妍時尚美學診所</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/hellohibar/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-hibar.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">洗髮產品Hibar活動頁</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/refreshtaiwanlottery/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-refresh.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">Refresh Taiwan活動遊戲頁</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/egainanimation/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-egain.jpg" alt="" />
+              <div class="Txt">
+                <p class="text-2xl">一見古美術情境式網站</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/situation3.0/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-olily3.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">歐立利情境式網頁</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/situation2.0/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-olily2.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">歐立利情境式網頁</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a
+            class="thumbnail"
+            type="button"
+            href="https://ellen713.github.io/yeh/"
+            target="_blank"
+          >
+            <div class="Img">
+              <img src="./img/thumbnail-yeh.jpg" alt="" />
+              <div class="Txt"><p class="text-2xl">個人其他作品</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <a class="thumbnail" type="button" href="" target="_blank"> </a>
+        </div>
+      </div>
     </div>
-    
 
     <!-- Modal-contact -->
-    <div class="modal fade" id="exampleModal-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row info">
-                        <ul class="col-md-4 col-4 title">
-                            <li>Mobile</li>
-                            <li>Mail</li>
-                        </ul>
-                        <ul class="col-md-8 col-8 content">
-                            <li><a href="tel:+886 978794357" target="_blank">+886 978 794 357</a></li>
-                            <li><a href="mailto: enyao713@gmail.com">enyao713@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div
+      class="modal fade"
+      id="exampleModal-contact"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row info">
+              <ul class="col-md-4 col-4 title">
+                <li>Mobile</li>
+                <li>Mail</li>
+              </ul>
+              <ul class="col-md-8 col-8 content">
+                <li>
+                  <a href="tel:+886 978794357" target="_blank"
+                    >+886 978 794 357</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto: enyao713@gmail.com">enyao713@gmail.com</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- 需要彈跳視窗時再解開 -->
     <!-- Modal-01 -->
     <!-- 
@@ -380,9 +588,7 @@
     -->
     <!-- 需要彈跳視窗時再解開END -->
 
-
-
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
