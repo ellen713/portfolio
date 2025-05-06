@@ -15,11 +15,11 @@
           var password = prompt("Password Please");
           //Change to your own password
           if (password != "1234") {
-            document.body.innerHTML = "http://ellenyao.work";
+            document.body.innerHTML = "https://ellenyao.work";
             document.body.innerHTML = "密碼錯誤";
           } else {
-            // alert('Success');
-            // $('.mask').remove();
+            alert("Success");
+            $(".mask").remove();
             $("body").removeClass("mask");
           }
         }
